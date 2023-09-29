@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template:
+    [row1-start] "header header" 15vh [row1-end]
+    [row2-start] "nav content" auto [row2-end]
+    [row3-start] "footer footer" 15vh [row3-end]
+    / 20vw auto;
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    grid-area: header;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(56, 59, 66);
+    color: white;
+    grid-area: nav;
+    padding: 20px;
+}
+
+article {
+    background-color: rgb(170, 170, 170);
+    grid-area: content;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    padding: 20px;
+}

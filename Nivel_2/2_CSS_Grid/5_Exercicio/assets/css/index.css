@@ -1,0 +1,105 @@
+/*  General Adjustments */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Body Format */
+body {
+    display: grid;
+    gap: 5px;
+    grid-template:
+        [row1-start] "header header" 15vh [row1-end]
+        [row2-start] "nav content" auto [row2-end]
+        [row3-start] "footer footer" 15vh [row3-end]
+        / 20vw auto;
+    height: 100vh;
+}
+
+/* Header Adjustments */
+header {
+    grid-area: header;
+    background-color: rgb(5, 0, 71);
+    color: white;
+    padding: 20px;
+}
+
+/* Nav Adjustments */
+nav {
+    grid-area: nav;
+    background-color: rgb(56, 59, 66);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Content Adjustments */
+article {
+    grid-area: content;
+    background-color: rgb(202, 202, 202);
+    display: grid;
+    gap: 5px;
+    /* 1a tentativa
+    grid-template-rows:
+        [article] auto
+        [image-box] auto; 
+    */
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 1a tentativa
+.article {
+    grid-area: article;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.image {
+    grid-area: image-box;
+    align-self: end;
+    background-color: rgb(138, 138, 138);
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: [col1-start] 20% [col1-end col2-start] 60% [col2-end col3-start] 20% [col3-end];
+}
+
+.img1 {
+    grid-column-start: col1-start;
+    grid-column-end: col1-end;
+    background-color: blue;
+}
+
+.img2 {
+    grid-column-start: col2-start;
+    grid-column-end: col2-end;
+    background-color: yellow;
+}
+
+.img3 {
+    grid-column-start: col3-start;
+    grid-column-end: col3-end;
+    background-color: green;
+}
+*/
+
+article div {
+    align-self: end;
+    background-color: rgb(138, 138, 138);
+    height: 100px;
+    padding: 20px;
+}
+
+/* Footer Adjustments */
+footer {
+    grid-area: footer;
+    background-color: rgb(5, 0, 71);
+    color: white;
+    padding: 20px;
+}

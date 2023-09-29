@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0 0 2px black;
+}
+
+section {
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    grid-template-columns: [col1-start] 50% [col1-end col2-start] 50% [col2-end];
+    grid-template-rows: [row] 25vh [row] 50vh [row] auto;
+}
+
+div {
+    padding: 20px;
+}
+
+.item-nav {
+    grid-row-start: row 1;
+    grid-column-start: col1-start;
+    grid-column-end: col2-end;
+    background-color: aqua;
+}
+
+.item-artigo-esquerda {
+    grid-row-start: row 2;
+    grid-column-start: col1-start;
+    background-color: red;
+}
+
+.item-artigo-direita {
+    grid-row-start: row 2;
+    grid-column-start: col2-start;
+    background-color: yellow;
+}
+
+.item-footer {
+    grid-row-start: row 3;
+    grid-column-start: col1-start;
+    grid-column-end: col2-end;
+    background-color: blue;
+}
