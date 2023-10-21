@@ -1,0 +1,17 @@
+.portrait-orientation {
+    display: block;
+}
+
+.landscape-orientation {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    .portrait-orientation {
+        display: none;
+    }
+
+    .landscape-orientation {
+        display: block;
+    }
+}

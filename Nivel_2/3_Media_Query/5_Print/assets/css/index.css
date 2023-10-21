@@ -1,0 +1,30 @@
+/* Body Configs */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+}
+
+/* Text Configs */
+h1 {
+    color: lightblue;
+}
+
+h3 {
+    color: orange;
+}
+
+p {
+    color: lightgreen;
+}
+
+/* Media Query Print Configs*/
+@media print {
+    body {
+        background-color: white;
+    }
+
+    h1,h3,p {
+        color: black;
+    }
+}
